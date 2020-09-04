@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+#cab_home{
+	
+}
+
+#cab_home ul a{
+	margin-right: 20px;
+}
+
+
+#cab_home ul a i{
+	margin-right: 5px;
+}
+
+.sidebar {
+	position: fixed;
+  	width: 250px;
+  	height: 100%;
+    left: -250px;   
+    background: #333;
+    top: 0;
+    z-index: 999;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar header{
+	font-size: 26px;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	background: #292929;
+	border: 0;
+}
+
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%
+	line-height: 65px;
+	font-size: 22px;
+	color: white;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border: 0;
+	transition: .4s;
+	text-decoration: none;
+	padding: 10px
+}
+
+.sidebar ul li:hover a{
+	padding-left: 50px;
+	background: #555; color: #fff;
+}
+
+.sidebar ul a i {
+	margin-right: 16px;
+}
+
+#dismiss {
+    width: 30px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #292929;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+#dismiss i{
+	line-height: 50px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+
+
