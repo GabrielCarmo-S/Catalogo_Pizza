@@ -1,106 +1,152 @@
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-}
+@media  (max-width: 992px) {
 
-
-#cab_home{
-	
-}
-
-#cab_home ul a{
-	margin-right: 20px;
-}
-
-
-#cab_home ul a i{
-	margin-right: 5px;
-}
-
-.sidebar {
-	position: fixed;
-  	width: 250px;
-  	height: 100%;
-    left: -250px;   
-    background: #333;
-    top: 0;
+  .mobileMenu {
+    position: fixed;
+    bottom: 0;
+    width: 240px;
+    height: 100%;
+    margin: auto;
+    left: -250px;
     z-index: 999;
-}
+    background: #576675;
+    top: 4px;
+  }
 
-.sidebar.active {
+  .mobileMenu.active {
     left: 0;
 }
 
-.sidebar header{
-	font-size: 26px;
-	color: white;
-	text-align: center;
-	line-height: 70px;
-	background: #292929;
-	border: 0;
+
+  .mobileMenu ul a{
+    height: 100%;
+    width: 100%
+    line-height: 65px;
+    font-size: 22px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border: 0;
+    transition: .4s;
+    padding: 10px
 }
 
-.sidebar ul a{
-	display: block;
-	height: 100%;
-	width: 100%
-	line-height: 65px;
-	font-size: 22px;
-	color: white;
-	padding-left: 40px;
-	box-sizing: border-box;
-	border: 0;
-	transition: .4s;
-	text-decoration: none;
-	padding: 10px
-}
-
-.sidebar ul li:hover a{
-	padding-left: 50px;
-	background: #555; color: #fff;
-}
-
-.sidebar ul a i {
-	margin-right: 16px;
-}
-
-#dismiss {
-    width: 30px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    background: #292929;
-    color: #fff;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-
-}
-
-#dismiss i{
-	line-height: 50px;
+.mobileMenu ul li:hover a{
+    padding-left: 50px; 
 }
 
 .overlay {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
+  position: fixed; 
+  display: none; 
+  width: 100%; /
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor: pointer; 
 }
 .overlay.active {
     display: block;
     opacity: 1;
+   
+}
+
+#sfc{
+	color: white;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+#sfc:hover {
+	outline: none;
+	border: none;
+}
+
+.servicos{
+	padding-bottom: 140px !important;
+	padding-top: 30px !important;
+	height: auto !important; 
+	padding-bottom: 20px !important;
+	padding-top: 20px;
+}
+
+}
+
+.mobileMenu ul a i {
+    margin-right: 5px;
+}
+
+.menu{
+	background: #4e5b69;
+	z-index: 999;
+}
+
+.carousel-inner{
+	width: 100%;
+	height: 100%;
+}
+
+.servicos, .servicos .card{
+	background: #242426;
+	color: #fff;
+	height: auto;
+	width: 100%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-bottom: 0rem !important;
+
+}
+
+.servicos i{
+	font-size: 30px;
+	margin-right: 15px;
+}
+
+.servicos a {
+	font-size: 22px;
+}
+
+.servicos a i:hover{
+	color: red; 
+	padding-left: 20px; 
+}
+
+.cardapio{
+	background: white;
+	margin-bottom: 0rem ;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 40px;
+}
+
+.c-cardapio a{
+	font-size: 40px;
+}
+
+.cardapio .card{
+	border: none;
+	outline: none;
+
+}
+
+#cd,#cd2{
+		border-bottom: 1px solid #000000;
 }
 
 
+.cardapio .card i:hover{
+	border: none;
+	outline: none;
+	color: yellow;
+	background: white;
+}
 
+#cd.active, #cd2.active{
+	border-bottom: 2px solid yellow;
+}
+
+#cd:hover, #cd2:hover{
+	border-bottom: 2px solid yellow;
+}
