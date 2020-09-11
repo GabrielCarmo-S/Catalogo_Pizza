@@ -113,40 +113,165 @@
 	padding-left: 20px; 
 }
 
-.cardapio{
-	background: white;
-	margin-bottom: 0rem ;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	font-size: 40px;
+
+.cardapio-button .card{
+	border: none;
+	background: #4e5b69;
 }
 
-.c-cardapio a{
-	font-size: 40px;
+.cardapio-button .card p{
+	font-size: 25px;
+}
+
+.cardapio-button .card p:hover{
+	color: white;
+}
+
+.card-img{
+	width: 230PX;
+	height: 200px;
+	margin: auto;
+}
+
+.cardapio {
+	border: none;
+	outline: none;
 }
 
 .cardapio .card{
-	border: none;
-	outline: none;
-
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#cd,#cd2{
-		border-bottom: 1px solid #000000;
+.card-img:hover{
+  transform: scale(1.1);
 }
 
-
-.cardapio .card i:hover{
-	border: none;
-	outline: none;
-	color: yellow;
+.btn-cardapio, .btn-cardapio:focus{
+	box-shadow: 0 0 0 0;
+	border: 0 none;
+	outline: 0;
 	background: white;
 }
 
-#cd.active, #cd2.active{
-	border-bottom: 2px solid yellow;
+.cardapio .card{
+	color: black;
 }
 
-#cd:hover, #cd2:hover{
-	border-bottom: 2px solid yellow;
+.testemunhos{
+	color: black;
+	background: white;
+	text-align: center;
+	padding: 30px 30px 50px;
+	margin: 0 15px 100px;
+	position: relative;
+	margin-bottom: 140px;
+	
+}
+
+.testemunhos:before,
+.testemunhos:after{
+	content: "";
+	border-top: 40px solid white;
+	border-right: 125px solid transparent;
+	position: absolute;
+
+	bottom: -40px;
+	left: 0;
+}
+
+.testemunhos:after{
+	border-right: none;
+	border-left: 125px solid transparent;
+	left: auto;
+	right: 0;
+}
+
+.testemunhos i{
+	display: inline-block;
+	font-size: 80px;
+	color: #f28a0b;
+	margin-bottom: 20px;
+	opacity: 0.6;
+}
+
+.testemunhos .descricao{
+	font-size: 16px;
+	color: #777;
+	text-align: justify;
+	margin-bottom: 30px;
+	opacity: 0.9;
+	letter-spacing: -1px;
+}
+
+.testemunhos .testemunhos-conteudo{
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
+
+.testemunhos .pic{
+	display: inline-block;
+	border: 6px solid white;
+	border-radius: 50%;
+	box-shadow: 0 0 2px #f4770b;
+	overflow: hidden;
+	
+	position: relative;
+}
+
+.testemunhos .pic img{
+	width: 100%;
+	height: auto;
+}
+
+.testemunhos .title{
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	text-transform: capitalize;
+	margin: 0 0 5px 0;
+}
+
+.pic img{
+	width: 100px !important;
+	height: 50px;
+}
+
+.testemunhos-inicio{
+	background: orange;
+}
+
+.vinho{
+
+	width: 100%;
+	height: 100%;
+}
+
+.noticias-conteudo i{
+	font-size: 60px;
+	text-align: center;
+	color: #DB3E07;
+}
+
+.noticias-conteudo .card-body{
+	text-align: center;
+
+}
+
+.noticias .card{
+	border: none;
+	outline: none;
+}
+
+.noticias, .noticias .card-deck{
+	background: #FF8E06;
+	border: none;
+	outline: none;
+	
+}
+
+.btn-noticias{
+	background: #FFAD03;
+	color: white;
+	border-radius: 50px;
 }
