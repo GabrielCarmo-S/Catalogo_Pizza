@@ -16,35 +16,6 @@ $(document).ready(function () {
   });  
 });
 
-	$(document).ready(function(){
-			  
-		$(".cos-card").click(function(){
-			$(".collapse1").collapse('show');
-		});
-
-		$(".co-card").click(function(){
-			$(".collapse2").collapse('show');
-		});
-			  
-	});
-
-$(document).ready(function () { 
-  $('.cos-card').on('click', function () {
-
-        $('#cd').addClass('active');
-        $('#cd2').removeClass('active');
-       
-  });  
-});
-
-$(document).ready(function () { 
-  $('.co-card').on('click', function () {
-
-        $('#cd2').addClass('active');
-        $('#cd').removeClass('active');
-      
-  });  
-});
 
 //Owl Carousel
 
@@ -60,9 +31,6 @@ $(".slider").owlCarousel({
 $(".cardapio-slidder").owlCarousel({
   items: 4,
   loop: true,
-  autoplay: true,
-  autoplayTimeout: 2000, //2000ms = 2s;
-  autoplayHoverPause: true,
   responsiveClass:true,
   responsive:{
         0:{
@@ -77,8 +45,7 @@ $(".cardapio-slidder").owlCarousel({
             nav:false
         },
         1000:{
-            items:4,
-            
+            items:4, 
         }
     }
 });
