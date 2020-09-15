@@ -16,20 +16,34 @@ $(document).ready(function () {
   });  
 });
 
-
 //Owl Carousel
 
 $(".slider").owlCarousel({
-  items: 3,
   loop: true,
   autoplay: true,
   autoplayTimeout: 2000, //2000ms = 2s;
   autoplayHoverPause: true,
+  responsiveClass:true,
+  responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        800:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3, 
+        }
+    }
 });
  
 
 $(".cardapio-slidder").owlCarousel({
-  items: 4,
   loop: true,
   responsiveClass:true,
   responsive:{
@@ -74,3 +88,4 @@ $(".testemunhos-slidder").owlCarousel({
         }
     }
 });
+

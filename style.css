@@ -98,6 +98,32 @@
 	list-style-type: none;
 }
 
+
+.noticias-d{
+	display: block !important;
+	width: 320px;
+}
+
+.noticias-image{
+	height: 300px!important;
+	width: 320px !important;
+	margin-top: 0px !important;
+	margin-left: -15px !important;
+	margin-bottom: 0px !important;
+	border-radius: 0px !important;
+}
+
+
+.noticias-txt i{
+	margin-top: 0px !important;
+}
+
+.btn-noticias{
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	margin-left: -20px !important;
+}
+
 }
 
 .container{
@@ -124,9 +150,41 @@
 }
 
 
-.carousel-inner{
-	width: 100%;
-	height: 100%;
+
+.image-central{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	color: white;
+
+}
+
+.image-central * {
+	position: relative;
+		z-index: 3; 
+}
+
+.image-central:nth-of-type(1){
+	background-image: url(pizza.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.image-central:nth-of-type(1):after{
+	content: '';
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%; height: 100%;
+	background: rgba(0,0,0,.4);
+	z-index: 2;
+
 }
 
 .servicos, .servicos .card{
@@ -185,33 +243,42 @@
 	color: black;
 }
 
-.vinho{
 
-	width: 100%;
-	height: 100%;
-}
-
-.noticias-conteudo i{
-	font-size: 60px;
-	text-align: center;
-	color: #DB3E07;
-}
-
-.noticias-conteudo .card-body{
-	text-align: center;
-
-}
-
-.noticias .card{
-	border: none;
-	outline: none;
-}
-
-.noticias, .noticias .card-deck{
+.noticias{
 	background: #FF8E06;
 	border: none;
 	outline: none;
-	
+}
+
+.noticias-d{
+	display: flex;
+	height: 500px auto;
+	width: 100% auto;
+	background: white;
+	border-radius: 20px; 
+	box-shadow: 7px 7px 7px 0px rgba(0,0,0, 0.7);	
+}
+
+
+.noticias-img img{
+	padding: none;
+	height: 400px;
+	width: 600px ;
+	margin-left: -50PX;
+	margin-top: -50PX;
+	border-radius: 50px;
+	box-shadow: 7px 7px 7px 0px rgba(0,0,0, 0.7);	
+}
+
+.noticias-txt{
+	margin-left: 20px
+}
+
+.noticias-txt i{
+	font-size: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #DB3E07;
 }
 
 .btn-noticias{
@@ -400,4 +467,24 @@
 }
 .social-media .button-media:nth-child(4):hover i{
   background: #333;
+}
+
+
+.whatsapp {
+
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:20px;
+    padding: 10px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+
+
 }
