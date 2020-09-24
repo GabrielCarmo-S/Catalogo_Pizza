@@ -1,0 +1,22 @@
+{
+	"description": "Perien site",
+	"authors": [
+
+		{
+			"name": "Gabriel Carmo",
+			"email": "perien.op@gmail.com"
+		}
+
+	],
+
+	"autoload":{
+		"psr-4":{
+			"App\\":"app",
+			"Core\\": "core"
+		}
+	},
+
+	"require":{}
+	
+		
+}
