@@ -1,3 +1,2 @@
-# Catalogo_Pizza
-
-Catalogo de Pizza, feito em php,utilizando mvc, com bootstrap e mysql.
+# Sistemas de ordem
+ Sistemas de ordem de serviços e vendas, com php, mysql e codeigniter
