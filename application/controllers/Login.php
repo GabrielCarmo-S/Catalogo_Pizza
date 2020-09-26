@@ -9,11 +9,7 @@
 
 			$data =  array('titulo' => 'Login', );
 
-		   	$this->load->view('layout/header');
-
 			$this->load->view('login/index');
-
-			$this->load->view('layout/footer');
 
 		}
 
@@ -25,7 +21,7 @@
 		   	
 		   	if ($this->ion_auth->login($identity, $password, $remember)) {
 
-		   		redirect('home');
+		   		redirect('adm');
 
 		   	} else {
 

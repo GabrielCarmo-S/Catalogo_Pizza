@@ -2,26 +2,12 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('/'); ?>">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('adm'); ?>">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="fas fa-pizza-slice"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Ordem Sistemas</div>
+        <div class="sidebar-brand-text mx-3">Configurações Pizzaria</div>
       </a>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Cadastros
-      </div>
-
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('clientes'); ?>">
-          <i class="fas fa-user-tie"></i>
-          <span>Clientes</span></a>
-      </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
@@ -36,13 +22,6 @@
         <a class="nav-link" href="<?php echo base_url('usuarios'); ?>">
           <i class="fas fa-users"></i>
           <span>Usuários</span></a>
-      </li>
-
-      <!-- Nav Item - Sistemas -->
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('sistema'); ?>">
-          <i class="fas fa-cogs"></i>
-          <span>Sistemas</span></a>
       </li>
 
       <!-- Divider -->
