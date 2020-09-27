@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="<?php echo base_url("public/css/style2.css"); ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url("public/css/style1.css"); ?>" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
 
@@ -67,52 +67,10 @@
 
         <a class="forgot text-muted mt-5" href="#">Esqueceu sua senha?</a>
 
-        <div class="social-media mb-3 mt-3 ml-5">
-          <div class="button-media">
-            <i class="fab fa-facebook"></i>
-          </div>
-          <div class="button-media">
-            <i class="fab fa-google"></i>
-          </div>
-        </div>  
-
       </form>
     </div>
   </div>  
 
-
-
-  <div class="jumbotron jumbotron-fluid rodape">
-    <ul class="lista-rodape">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-home"></i>Home</a>
-      </li>  
-          <li class="nav-item">
-             <a class="nav-link" href="#"><i class="fas fa-question-circle"></i>Sobre nós</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link"type="button" data-toggle="modal" data-target="#contact"><i class="fas fa-envelope"></i>Contato</a>
-          </li>
-    </ul>
-    <div class="social-media mb-3">
-      <div class="button-media">
-        <i class="fab fa-facebook"></i>
-      
-      </div>
-      <div class="button-media">
-        <i class="fab fa-instagram"></i>
-        
-      </div>
-      <div class="button-media">
-        <i class="fab fa-twitter"></i>
-      </div>
-      <div class="button-media">
-        <i class="fab fa-github"></i>
-        
-      </div>  
-    </div>  
-    <p class="copyrights">&copy; 2020 Gabriel Carmo</p>
-  </div>
 
     <div class="overlay"></div>
 
