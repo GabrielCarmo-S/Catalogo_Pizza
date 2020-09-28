@@ -25,7 +25,7 @@
 
 		   	} else {
 
-		   		$this->session->set_flashdata('error', 'Verifique seu email ou senha');
+		   		$this->session->set_flashdata('error', 'E-mail ou senha incorretas');
 
 		   		redirect('login');
 

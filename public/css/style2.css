@@ -1,0 +1,153 @@
+@media screen and (max-width:450px) {
+.msg{
+	display: flex;
+	margin-left: 0px!important;
+	padding-left: 40px;
+}
+
+.login-logo {
+ 	display:none !important;
+
+}
+
+.login-logo2{
+	margin-top: 40%;
+	display: flex !important;
+	flex-direction: column !important;
+}
+
+.login-logo2 i{
+	margin-left: 12px;
+	margin-right: 10px;
+	font-size: 38px;
+	padding-top: 10px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+}
+
+.login-conteudo{
+	border-radius: 0px!important;
+	margin-top: 0px !important;
+	width: 100% !important;
+	height: 100vh !important;
+	box-shadow: none!important;
+
+}
+
+
+}
+
+@media screen and (max-width: 1700px) {
+
+
+.msg{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: red;
+	margin-left: 50px;
+	background: transparent;
+	border: none;
+}
+
+.msg2{
+	margin-top: 0px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	margin-bottom: 0px;
+	width: 400px;
+	height: 30px;
+	padding-left: 110px;
+}
+
+
+body{
+	height: 100%;
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,207,69,1) 100%);
+}
+
+.login-logo {
+	position: block;
+	margin-left: 110px;
+	background: #FC7230;
+	height: 160px;
+	width: 160px;
+	margin-top: -80px;
+	border-radius: 50%;
+	box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+
+}
+
+.login-logo i{
+	margin-top: 50px;
+	margin-left: 55px;
+	font-size: 50px;
+	color: white;
+}
+
+.login-logo:hover{
+	  transform: scale(1.1);
+}
+
+.login-logo2{
+	  display: none;
+}
+
+
+.login-conteudo{
+	display: flex;
+	flex-direction: column;
+	background: #FFAD03;
+	position: center;
+	width: 400px;
+	height: 410px;
+	margin-top: 100px;
+	border: 0;
+	border-radius: 30px;
+	color: white;
+	outline: none;
+	box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+}
+
+.login-form input{ 
+	position: relative;
+	border-radius: 30px;
+	border: 2px solid #FC7230;
+}
+
+.login-form input:focus {
+    border-color: #2ecc71;
+    outline: none;
+}
+
+.login_btn{
+	color: black;
+	background: white;
+	border-radius: 30px;
+	width: 150px;
+	height: 50px;
+	font-size: 25px;
+	border: 2px solid #FC7230;
+}
+
+.login_btn:hover{
+	 background: #FC7230;
+	 color: white;
+	 outline: none;
+}
+
+#password, #email{
+	height: 50px;
+}
+
+}
+
+
+/* Para pc */
+
+
+
