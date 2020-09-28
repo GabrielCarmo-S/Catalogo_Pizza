@@ -2,8 +2,8 @@
 <p align="center">Sistema de catalogo de pizza dinamico onde pode se editar as imagens e textos pelo administrativo.</p>
 
 <div align="center">
-	<img src="./github/n1.gif" alt="demo-web" height="325">
-		<img src="./github/n3.gif" alt="demo-web" height="425">
+	<img src="./github/n1.gif" alt="demo-web" height="425">
+	<img src="./github/n3.gif" alt="demo-mobile" height="425">
 </div>
 
 
