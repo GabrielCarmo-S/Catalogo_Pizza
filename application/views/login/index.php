@@ -40,47 +40,54 @@
 
       <div class="input-group col-lg-12 mb-3">
         <input type="email" name="email" id="email" class="form-control input-lg text-center" value="" placeholder="Seu email">
+        <span class="icon-login"><i class="far fa-envelope"></i></span>
       </div>
 
-      <div class="form-group col-lg-12">
-        <input type="password" id="password" name="password" class="form-control input-lg text-center" placeholder="Sua senha"  >
-        <?php if ($message = $this->session->flashdata('error')): ?>
-          <div class="row">
-            <div>
-              <div class="fade show" role="alert">
-               <h5 class="form-control msg"><?php echo $message; ?></h5>
-              </div>
-            </div>
-          </div>
-        <?php endif; ?>
+      <div class="input-group col-lg-12 ">
+        <input type="password" id="password" name="password" class="form-control input-lg text-center" placeholder="Sua senha">
+        <span class="icon-login"><i class="fas fa-key"></i></span>
+        <span type="button" class="view-pass"><i class="fas fa-eye"></i></span>
       </div>
+      <div class="jumbtron-fluid bg-d"></div>
 
-      <div class="d-flex justify-content-center mt-2 mb-2 login_container">
+      <?php if ($message = $this->session->flashdata('error')): ?>
+        <div class="container">
+          <div>
+            <div class="fade show" role="alert">
+             <h5 class="form-control msg"><?php echo $message; ?></h5>
+           </div>
+         </div>
+       </div>
+     <?php endif; ?>
 
-        <button type="submit" class="login_btn">Entrar</button>
+     <div class="d-flex justify-content-center login_container">
 
-      </div>
+      <button type="submit" class="login_btn">Entrar</button>
 
-      <a class="forgot text-muted mt-5" href="#">Esqueceu sua senha?</a>
+    </div>
 
-    </form>
-  </div>
+    <a class="forgot text-muted mt-5" href="#">Esqueceu sua senha?</a>
+
+  </form>
+</div>
 
 
 
-  <div class="overlay"></div>
+<div class="overlay"></div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+<script src="<?php echo base_url("public/js/login.js"); ?>"></script>
 
 </body>
 </html>

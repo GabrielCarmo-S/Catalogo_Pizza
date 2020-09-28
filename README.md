@@ -3,7 +3,7 @@
 
 <div align="center">
 	<img src="./github/n1.gif" alt="demo-web" height="425">
-	<img src="./github/n3.gif" alt="demo-mobile" height="425">
+	<img src="./github/n4.gif" alt="demo-mobile" height="425">
 </div>
 
 
@@ -19,5 +19,7 @@
 - ✔️ Bootstrap
 
 - ✔️ MySQL
+
+- ✔️ JavaScript
 
 
