@@ -24,7 +24,7 @@
   <body>
 
 
-  <div class="jumbotron jumbotron-fluid login mb-0">
+  
     <div class="container login-conteudo">
 
         <?php if ($message = $this->session->flashdata('error')): ?>
@@ -51,17 +51,17 @@
       <h1 class="text-center mt-3">Login</h1>
       <form class="login-form mt-3 text-center" name="form_auth" method="POST" action="<?php echo base_url('login/auth'); ?>">
 
-        <div class="input-group mb-3">
-          <input type="email" name="email" class="form-control input_user text-center" value="" placeholder="Seu email">
+        <div class="input-group col-lg-12 mb-3">
+          <input type="email" name="email" class="form-control input-lg text-center" value="" placeholder="Seu email">
         </div>
 
-        <div class="input-group">
-          <input type="password" id="password" name="password" class="form-control input_pass text-center" placeholder="Sua senha"  >
+        <div class="form-group col-lg-12">
+          <input type="password" id="password" name="password" class="form-control input-lg text-center" placeholder="Sua senha"  >
         </div>
 
-        <div class="d-flex justify-content-center mt-3 login_container">
+        <div class="d-flex justify-content-center mt-3 mb-3 login_container">
 
-          <input type="submit" class="login_btn">
+          <button type="submit" class="login_btn">Entrar</button>
 
         </div>
 
@@ -69,7 +69,7 @@
 
       </form>
     </div>
-  </div>  
+
 
 
     <div class="overlay"></div>
