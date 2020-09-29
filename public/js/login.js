@@ -35,7 +35,23 @@ $(document).ready(function () {
         $('.login-logo').toggleClass('active');
         $('.login-input').toggleClass('active');
         $('input').toggleClass('active');
-
-       
+        $('i').toggleClass('active');
+        $('.login-input2').toggleClass('active');   
+        $('#lc1').toggleClass('active');
+        $('#lc2').toggleClass('active');
+        $('i').toggleClass('active');
+        $('i').toggleClass('active');
+        $('.login_btn').toggleClass('active');
+     
   });  
 });
+
+$(document).ready(function () { 
+  $('.view-pass').on('click', function () {
+    $('#v1').toggleClass('active');
+    $('#v2').toggleClass('active');
+  });  
+});
+
+
+

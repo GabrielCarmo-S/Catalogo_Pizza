@@ -24,7 +24,8 @@
 <body>
 
   <div class="login-color">
-    <span type="button" class="test"><i class="fas fa-toggle-off"></i></span>
+    <span  type="button" class="test" ><i class="fas fa-toggle-on" id="lc2"></i></span> 
+    <span type="button" class="test"><i class="fas fa-toggle-off " id="lc1"> </i></span>
   </div>
 
   <div class="container login-conteudo">
@@ -53,7 +54,8 @@
         </div>
         <input type="password" id="password" name="password" class="form-control input-lg" placeholder="Sua senha">
         <div class="container login-input2" >
-           <span type="button" class="view-pass"><i class="fas fa-eye"></i></span>
+           <span type="button" class="view-pass" id="v2"><i class="far fa-eye-slash"></i></span>
+           <span type="button" class="view-pass" id="v1"><i class="fas fa-eye"></i></span>
         </div>
         
       </div>

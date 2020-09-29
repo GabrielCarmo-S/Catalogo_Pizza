@@ -9,7 +9,7 @@
 }
 
 .login-logo2{
-	margin-top: 10%;
+	margin-top: 15%;
 	margin-bottom: 50px;
 	display: flex !important;
 	flex-direction: column !important;
@@ -32,6 +32,11 @@
 	box-shadow: none!important;
 
 }
+
+.login-color{
+	height: 0px !important;
+}
+
 
 
 }
@@ -66,17 +71,21 @@ body.active{
 	background: #191919;
 }
 
-.login-logo.active{
+.login-logo.active, .login_btn.active:hover{
 	background: #1565c0;
 }
 
-.login-input.active {
+.login-input.active, .login-input2.active, .login-form input.active, .login_btn.active{
 	border-color: #1565c0;
 }
 
-input.active{
+.login-input.active:focus, .login-input2.active:focus, .login-form input.active:focus{
 	border-color: #1565c0;
 }
+
+ .icon-login i.active, .view-pass i.active, .view-pass i.active{
+ 	color: #1565c0;
+ }
 
 .login-logo {
 	position: block;
@@ -115,7 +124,7 @@ input.active{
 	position: center;
 	width: 400px;
 	height: 420px;
-	margin-top: 150px;
+	margin-top: 100px;
 	border: 0;
 	border-radius: 30px;
 	color: white;
@@ -222,10 +231,37 @@ input.active{
 .login-color{
 	height: 30px;
 	width: 100%;
-	background: black;
+	background: transparent;
 }
 
 .login-color i{
-	font-size: 20px;
+	font-size: 30px;
 	color: white;
+	float: right;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#v1{
+	display: none;
+}
+
+#lc2{
+	display: none;
+}
+
+#v1.active{
+	display: block;
+}
+
+#v2.active{
+	display: none;
+}
+
+#lc1.active{
+	display: none;
+}
+
+#lc2.active{
+	display: block;
 }
