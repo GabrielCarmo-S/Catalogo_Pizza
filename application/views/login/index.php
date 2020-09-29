@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="<?php echo base_url("public/css/style1.css"); ?>" rel="stylesheet">
+  <link rel="stylesheet" href="<?php echo base_url("public/css/style2.css"); ?>" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
 
@@ -23,10 +23,11 @@
 
 <body>
 
-
+  <div class="login-color">
+    <span type="button" class="test"><i class="fas fa-toggle-off"></i></span>
+  </div>
 
   <div class="container login-conteudo">
-
     <div class="login-logo">
       <i class="fas fa-pizza-slice"></i>
     </div>
@@ -39,16 +40,23 @@
     <form class="login-form mt-3 text-center" name="form_auth" method="POST" action="<?php echo base_url('login/auth'); ?>">
 
       <div class="input-group col-lg-12 mb-3">
-        <input type="email" name="email" id="email" class="form-control input-lg text-center" value="" placeholder="Seu email">
-        <span class="icon-login"><i class="far fa-envelope"></i></span>
+        <div class="container login-input" >
+            <span class="icon-login"><i class="far fa-envelope"></i></span>
+        </div>
+        <input type="email" name="email" id="email" class="form-control input-lg " value="" placeholder="Seu email">
       </div>
 
+
       <div class="input-group col-lg-12 ">
-        <input type="password" id="password" name="password" class="form-control input-lg text-center" placeholder="Sua senha">
-        <span class="icon-login"><i class="fas fa-key"></i></span>
-        <span type="button" class="view-pass"><i class="fas fa-eye"></i></span>
+        <div class="container login-input" >
+           <span class="icon-login"><i class="fas fa-key"></i></span>
+        </div>
+        <input type="password" id="password" name="password" class="form-control input-lg" placeholder="Sua senha">
+        <div class="container login-input2" >
+           <span type="button" class="view-pass"><i class="fas fa-eye"></i></span>
+        </div>
+        
       </div>
-      <div class="jumbtron-fluid bg-d"></div>
 
       <?php if ($message = $this->session->flashdata('error')): ?>
         <div class="container">

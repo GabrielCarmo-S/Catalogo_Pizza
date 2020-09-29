@@ -26,3 +26,16 @@ $(document).ready(function(){
     }
   });
 });
+
+$(document).ready(function () { 
+  $('.test').on('click', function () {
+    
+        $('.login-conteudo').toggleClass('active');
+        $('body').toggleClass('active');
+        $('.login-logo').toggleClass('active');
+        $('.login-input').toggleClass('active');
+        $('input').toggleClass('active');
+
+       
+  });  
+});

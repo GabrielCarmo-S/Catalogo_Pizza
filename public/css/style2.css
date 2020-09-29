@@ -36,9 +36,6 @@
 
 }
 
-@media screen and (max-width: 1700px) {
-
-
 .msg{
 	position: block;
 	margin-top: 0px;
@@ -54,6 +51,31 @@ body{
 	height: 100%;
 	background: rgb(131,58,180);
 	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,207,69,1) 100%);
+}
+
+input:focus {
+    box-shadow: 0 0 0 0!important;
+    outline: 0!important;
+} 
+
+body.active{
+	background: linear-gradient(to right, #b92b27, #1565c0)
+}
+
+.login-conteudo.active{
+	background: #191919;
+}
+
+.login-logo.active{
+	background: #1565c0;
+}
+
+.login-input.active {
+	border-color: #1565c0;
+}
+
+input.active{
+	border-color: #1565c0;
 }
 
 .login-logo {
@@ -105,14 +127,17 @@ body{
 
 .login-form input{ 
 	position: relative;
-	border-radius: 30px!important;
+	border-top-right-radius: 30px!important;
+	border-bottom-right-radius: 30px!important;
 	border: 2px solid #FC7230;
+	border-left: none;
+	border-top-left-radius: 0px;
 }
 
 .login-form input:focus {
     border-color: #FC7230;
-    outline: none;
 }
+
 
 .login_btn{
 	margin-top: 10px;
@@ -140,11 +165,47 @@ body{
 	height: 50px;
 }
 
+#password{
+	border-bottom-right-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+	border-right: none !important;
+
+}
+
+.login-input{
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border:	2px solid #FC7230;
+  	border-style:solid;
+	display: block;
+	height: 50px;
+	width: 20px;
+	background: white;
+	border-right: none;
+	padding-right: 25px;
+	margin-right: -10px;
+}
+
+.login-input2{
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border:	2px solid #FC7230;
+  	border-style:solid;
+	display: block;
+	height: 50px;
+	width: 20px;
+	background: white;
+	padding-left: 25px;
+	margin-left: -10px;
+	border-left: 0px;
+
+}
+
 .icon-login i {
 	visibility: visible;
 	position: absolute;
 	top: 15px;
-	left: 30px;
+	left: 25px;
 	color: red;
 	font-size: 20px;
 }
@@ -152,17 +213,19 @@ body{
 .view-pass i{
 	position: absolute;
 	top: 15px;
-	right: 30px;
+	right: 23px;
 	color: red;
 	font-size: 20px;
 	border: none;
-	background: transparent;
 }
 
-
+.login-color{
+	height: 30px;
+	width: 100%;
+	background: black;
 }
 
-
-
-
-
+.login-color i{
+	font-size: 20px;
+	color: white;
+}
