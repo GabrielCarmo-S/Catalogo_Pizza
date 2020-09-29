@@ -246,10 +246,6 @@ body.active{
 	display: none;
 }
 
-#lc2{
-	display: none;
-}
-
 #v1.active{
 	display: block;
 }
@@ -258,10 +254,15 @@ body.active{
 	display: none;
 }
 
-#lc1.active{
+#lc2{
 	display: none;
 }
 
 #lc2.active{
 	display: block;
 }
+
+#lc1.active{
+	display: none;
+}
+
