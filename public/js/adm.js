@@ -1,5 +1,5 @@
 $(document).ready(function () { 
-  $('.hamburger').on('click', function () {
+  $('.cogs').on('click', function () {
     $('.sidebar').toggleClass('active');
 
   });  

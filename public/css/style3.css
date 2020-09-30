@@ -23,7 +23,7 @@ body{
   top: 0;
 }
 
-.wrapper .top_navbar .hamburger{
+.wrapper .top_navbar .cogs{
   width: 70px;
   height: 100%;
   background: #2e4ead;
@@ -55,6 +55,7 @@ body{
 
 .wrapper .top_navbar .top_menu ul{
   display: flex;
+  margin-top: 20px;
 }
 
 .wrapper .top_navbar .top_menu ul li a{
@@ -94,7 +95,7 @@ body{
   top: 0;
 }
 
-.wrapper .top_navbar .hamburger{
+.wrapper .top_navbar .cogs{
   width: 70px;
   height: 100%;
   background: #2e4ead;
@@ -220,9 +221,9 @@ body{
   display: none;
 }
 
-
-
-
-
-
+.dropdown-menu.show{
+  margin-top: 15px;
+  background: white;
+    cursor: pointer;
+}
 
