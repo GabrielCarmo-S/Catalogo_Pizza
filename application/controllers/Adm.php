@@ -19,11 +19,10 @@
 
 		public function index(){
 
-			$this->load->view('layout/header');
+
 
 			$this->load->view('adm/index');
 
-			$this->load->view('layout/footer');
 
 		}
 
