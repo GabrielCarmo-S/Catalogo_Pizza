@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-	<link href="<?php echo base_url("public/css/style1.css"); ?>" rel="stylesheet">
+	<link href="<?php echo base_url("public/css/style.css"); ?>" rel="stylesheet">
 
 	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url("public/img/favicon.png"); ?>">
 
