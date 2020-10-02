@@ -37,46 +37,27 @@
       <i class="fas fa-pizza-slice"><h2>Pizzaria</h2></i>
     </div>
 
-    <h1 class="text-center mt-3">Login</h1>
-    <form class="login-form mt-3 text-center" name="form_auth" method="POST" action="<?php echo base_url('login/auth'); ?>">
+    <h1 class="text-center mt-3">Resete Sua Senha</h1>
 
-      <div class="input-group col-lg-12 mb-3">
-        <div class="container login-input" >
-            <span class="icon-login"><i class="far fa-envelope"></i></span>
+
+      <?php echo form_open("auth/forgot_password");?>
+
+        <div class="input-group col-lg-12 mb-3 cv">
+          <label>Email:</label>
+          <?php echo form_input($identity);?>
+
         </div>
-        <input type="email" name="email" id="email" class="form-control input-lg " value="" placeholder="Seu email">
+
+        <div class="input-group col-lg-12 cv2">
+          <?php echo form_submit('submit', lang('forgot_password_submit_btn'));?>
+        </div>
+
+      <?php echo form_close();?>
+
+      <div class="voltar-login mt-3">
+        <a href=""><i class="fas fa-long-arrow-alt-left"></i>Voltar Para Login</a>
       </div>
-
-
-      <div class="input-group col-lg-12 ">
-        <div class="container login-input" >
-           <span class="icon-login"><i class="fas fa-key"></i></span>
-        </div>
-        <input type="password" id="password" name="password" class="form-control input-lg" placeholder="Sua senha">
-        <div class="container login-input2" >
-           <span type="button" class="view-pass" id="v2"><i class="far fa-eye-slash"></i></span>
-           <span type="button" class="view-pass" id="v1"><i class="fas fa-eye"></i></span>
-        </div>
-        
-      </div>
-
-      <?php if ($message = $this->session->flashdata('error')): ?>
-        <div class="container">
-          <div>
-            <div class="fade show" role="alert">
-             <h5 class="form-control msg"><?php echo $message; ?></h5>
-           </div>
-         </div>
-       </div>
-     <?php endif; ?>
-
-     <div class="d-flex justify-content-center login_container">
-
-      <button type="submit" class="login_btn">Entrar</button>
-
     </div>
-
-    <a class="forgot text-muted mt-5" href="<?php echo base_url("auth/forgot_password"); ?>">Esqueceu sua senha?</a>
 
   </form>
 </div>
@@ -98,5 +79,8 @@
 
 </body>
 </html>
+
+
+
 
 
