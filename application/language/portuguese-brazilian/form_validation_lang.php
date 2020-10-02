@@ -9,7 +9,7 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$lang['form_validation_required'] = 'Este campo é obrigatório.';
+$lang['form_validation_required'] = 'Estes campos são obrigatórios.';
 $lang['form_validation_isset'] = 'O campo {field} deve conter um valor.';
 $lang['form_validation_valid_email'] = 'O campo {field} deve conter um email válido.';
 $lang['form_validation_valid_emails'] = 'O campo {field} deve conter apenas emails válidos.';
@@ -28,7 +28,7 @@ $lang['form_validation_numeric'] = 'O campo {field} deve conter somente números
 $lang['form_validation_is_numeric'] = 'O campo {field} deve conter somente números.';
 $lang['form_validation_integer'] = 'O campo {field} deve conter um número inteiro.';
 $lang['form_validation_regex_match'] = 'O campo {field} não está em um formato correto.';
-$lang['form_validation_matches'] = 'O campo {field} não é igual ao campo {param}.';
+$lang['form_validation_matches'] = 'Digite igualmente nos campos.';
 $lang['form_validation_differs'] = 'O campo {field} deve ser diferente do campo {param}.';
 $lang['form_validation_is_unique'] = 'Esse campo já existe, ele deve ser único.';
 $lang['form_validation_is_natural'] = 'O campo {field} deve conter um número natural.';

@@ -39,7 +39,6 @@
 
     <h1 class="text-center mt-3">Resete Sua Senha</h1>
 
-
       <?php echo form_open("auth/forgot_password");?>
 
         <div class="input-group col-lg-12 mb-3 cv">
@@ -51,7 +50,6 @@
         <div class="input-group col-lg-12 cv2">
           <?php echo form_submit('submit', lang('forgot_password_submit_btn'));?>
         </div>
-
       <?php echo form_close();?>
 
       <div class="voltar-login mt-3">

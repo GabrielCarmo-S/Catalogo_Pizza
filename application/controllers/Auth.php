@@ -342,8 +342,8 @@ class Auth extends CI_Controller
 		{
 			// if the code is valid then display the password reset form
 
-			$this->form_validation->set_rules('new', $this->lang->line('reset_password_validation_new_password_label'), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|matches[new_confirm]');
-			$this->form_validation->set_rules('new_confirm', $this->lang->line('reset_password_validation_new_password_confirm_label'), 'required');
+			$this->form_validation->set_rules('new', $this->lang->line(''), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|matches[new_confirm]');
+			$this->form_validation->set_rules('new_confirm', $this->lang->line(''), 'required');
 
 			if ($this->form_validation->run() === FALSE)
 			{

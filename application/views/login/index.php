@@ -44,7 +44,7 @@
         <div class="container login-input" >
             <span class="icon-login"><i class="far fa-envelope"></i></span>
         </div>
-        <input type="email" name="email" id="email" class="form-control input-lg " value="" placeholder="Seu email">
+        <input type="email" name="email" id="email" class="form-control input-lg " value="" placeholder="Seu email" required>
       </div>
 
 
@@ -57,7 +57,6 @@
            <span type="button" class="view-pass" id="v2"><i class="far fa-eye-slash"></i></span>
            <span type="button" class="view-pass" id="v1"><i class="fas fa-eye"></i></span>
         </div>
-        
       </div>
 
       <?php if ($message = $this->session->flashdata('error')): ?>
