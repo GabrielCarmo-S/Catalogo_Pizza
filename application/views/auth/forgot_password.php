@@ -55,7 +55,7 @@
       <?php echo form_close();?>
 
       <div class="voltar-login mt-3">
-        <a href=""><i class="fas fa-long-arrow-alt-left"></i>Voltar Para Login</a>
+        <a href="<?php echo base_url("login/index"); ?>"><i class="fas fa-long-arrow-alt-left"></i>Voltar Para Login</a>
       </div>
     </div>
 
