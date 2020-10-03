@@ -1,0 +1,332 @@
+@media screen and (max-width:450px) {
+.msg{
+	margin-left: 0px!important;
+}
+
+.login-logo {
+ 	display:none !important;
+
+}
+
+.login-logo2{
+	margin-top: 15%;
+	margin-bottom: 50px;
+	display: flex !important;
+	flex-direction: column !important;
+}
+
+.login-logo2 i{
+	margin-left: 12px;
+	margin-right: 10px;
+	font-size: 38px;
+	padding-top: 10px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+}
+
+.login-conteudo{
+	border-radius: 0px!important;
+	margin-top: 0px !important;
+	width: 100% !important;
+	height: 100vh !important;
+	box-shadow: none!important;
+
+}
+
+.login-color{
+	height: 0px !important;
+}
+
+
+
+}
+
+.msg{
+	position: block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: red;
+	margin-left: 0px;
+	background: transparent;
+	border: none;
+	margin-left: 0px;
+}
+
+body{
+	height: 100%;
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,207,69,1) 100%);
+}
+
+input:focus {
+    box-shadow: 0 0 0 0!important;
+    outline: 0!important;
+} 
+
+body.active{
+	background: linear-gradient(to right, #b92b27, #1565c0)
+}
+
+.login-conteudo.active{
+	background: #191919;
+}
+
+.login-logo.active, .login_btn.active:hover, .cv2 input.active:hover{
+	background: #1565c0;
+}
+
+.login-input.active, .login-input2.active, .login-form input.active, .login_btn.active, .cv2 input.active, .cv input.active{
+	border-color: #1565c0;
+}
+
+.login-input.active:focus, .login-input2.active:focus, .login-form input.active:focus{
+	border-color: #1565c0;
+}
+
+ .icon-login i.active, .view-pass i.active, .view-pass i.active{
+ 	color: #1565c0;
+ }
+
+.login-logo {
+	position: block;
+	margin-left: 110px;
+	background: #FC7230;
+	height: 160px;
+	width: 160px;
+	margin-top: -80px;
+	border-radius: 50%;
+	box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+
+}
+
+.login-logo i{
+	margin-top: 50px;
+	margin-left: 55px;
+	font-size: 50px;
+	color: white;
+}
+
+.login-logo:hover{
+	  transform: scale(1.1);
+}
+
+.login-logo2{
+	  display: none;
+}
+
+
+.login-conteudo{
+	display: flex;
+	flex-direction: column;
+	background: #FFAD03;
+	position: center;
+	width: 400px;
+	height: 420px;
+	margin-top: 100px;
+	border: 0;
+	border-radius: 30px;
+	color: white;
+	outline: none;
+	box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px -1px 17px -4px rgba(0,0,0,0.75);
+}
+
+.login-form input{ 
+	position: relative;
+	border-top-right-radius: 30px!important;
+	border-bottom-right-radius: 30px!important;
+	border: 2px solid #FC7230;
+	border-left: none;
+	border-top-left-radius: 0px;
+}
+
+.login-form input:focus {
+    border-color: #FC7230;
+}
+
+
+.login_btn{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	color: black;
+	background: white;
+	border-radius: 30px;
+	width: 150px;
+	height: 50px;
+	font-size: 25px;
+	border: 2px solid #FC7230;
+}
+
+.login_btn:hover{
+	 background: #FC7230;
+	 color: white;
+	 outline: none;
+}
+
+.login_btn:focus{
+	 outline: none;
+}
+
+#password, #email{
+	height: 50px;
+}
+
+#password{
+	border-bottom-right-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+	border-right: none !important;
+
+}
+
+.login-input{
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border:	2px solid #FC7230;
+  	border-style:solid;
+	display: block;
+	height: 50px;
+	width: 20px;
+	background: white;
+	border-right: none;
+	padding-right: 25px;
+	margin-right: -10px;
+}
+
+.login-input2{
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border:	2px solid #FC7230;
+  	border-style:solid;
+	display: block;
+	height: 50px;
+	width: 20px;
+	background: white;
+	padding-left: 25px;
+	margin-left: -10px;
+	border-left: 0px;
+
+}
+
+.icon-login i {
+	visibility: visible;
+	position: absolute;
+	top: 15px;
+	left: 25px;
+	color: red;
+	font-size: 20px;
+}
+
+.view-pass i{
+	position: absolute;
+	top: 15px;
+	right: 23px;
+	color: red;
+	font-size: 20px;
+	border: none;
+}
+
+.login-color{
+	height: 30px;
+	width: 100%;
+	background: transparent;
+}
+
+.login-color i{
+	font-size: 30px;
+	color: white;
+	float: right;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#v1{
+	display: none;
+}
+
+#v1.active{
+	display: block;
+}
+
+#v2.active{
+	display: none;
+}
+
+#lc2{
+	display: none;
+}
+
+#lc2.active{
+	display: block;
+}
+
+#lc1.active{
+	display: none;
+}
+
+
+/*Recuperar-Senha*/
+
+.cv{
+	
+	margin-top: 10px;
+}
+
+.cv input{
+	
+	position: relative;
+	margin-left: 10px;
+	height: 40px;
+	width: 350px;
+	border-radius: 30px;
+	border: 2px solid #FC7230;
+	padding-left: 20px;
+}
+
+.cv label{
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: -1px;
+	margin-left: 15px;
+	color: white;
+}
+
+.cv2 input{
+	margin-left: 10px;
+	color: black;
+	background: white;
+	border-radius: 30px;
+	width: 340px;
+	height: 40px;
+	font-size: 25px;
+	border: 2px solid #FC7230;
+	padding-left: 10px;
+}
+
+.cv2 input:hover{
+	 background: #FC7230;
+	 color: white;
+	 outline: none;
+}
+
+.voltar-login a{
+	display: flex;
+	padding-top: 10px;
+	margin-left: 90px;
+	font-size: 20px;
+	color: white;
+}
+
+.voltar-login a i{
+	display: flex;
+	padding-top: 7px;
+	padding-right: 5px;
+}
+
+
+.voltar-login a:hover{
+	outline: 0!important;
+	text-decoration:none; 
+}

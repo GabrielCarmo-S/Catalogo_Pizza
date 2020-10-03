@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="<?php echo base_url("public/css/style4.css"); ?>" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo base_url("public/css/style5.css"); ?>" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
 
@@ -37,27 +37,52 @@
 			<i class="fas fa-pizza-slice"><h2>Pizzaria</h2></i>
 		</div>
 
-		<h3>Colocar nova senha</h3>
+		<h3 class="text-center mt-2">Colocar nova senha</h3>
 
 		<?php echo form_open('auth/reset_password/' . $code);?>
 
-		<label for="new_password"><?php echo sprintf(lang('reset_password_new_password_label'), $min_password_length);?></label> <br />
+		<div class="input-group col-lg-12">
+			<div class="container login-input">
+				<span class="icon-login"><i class="fas fa-key"></i></span>
+			</div>
+			<input type="password" name="new" value id="new" class="form-control input-lg" placeholder="Sua nova senha" required minlength="8">
 
-		<input type="password" name="new" value id="new">
+			<div class="container login-input2" >
+				<span type="button" class="view-pass" id="v2"><i class="far fa-eye-slash"></i></span>
+				<span type="button" class="view-pass" id="v1"><i class="fas fa-eye"></i></span>
+			</div>
+		</div>
 
-		<input type="password" name="new_confirm" value id="new_confirm">
+
+		<div class="input-group col-lg-12 mt-3">
+			<div class="container login-input" >
+				<span class="icon-login"><i class="fas fa-key"></i></span>
+			</div>
+			<input type="password" name="new_confirm" value id="new_confirm" class="form-control input-lg input-login" placeholder="Confirme sua senha" required minlength="8">
+
+			<div class="container login-input2">
+				<span type="button" class="view-pass1" id="v4"><i class="far fa-eye-slash"></i></span>
+				<span type="button" class="view-pass1" id="v3"><i class="fas fa-eye"></i></span>
+			</div>
+		</div>
 
 		<?php echo form_input($user_id);?>
 		<?php echo form_hidden($csrf); ?>
 
-		<input type="submit" name="submit" value="Mudar">
+				<div class="text-center mt-3" id="infoMessage"><?php echo $message;?></div>
+
+
+		<div class="d-flex justify-content-center login_container">
+
+			<button type="submit" name="submit" value="Mudar" class="login_btn">Mudar</button>
+
+		</div>
 
 		<?php echo form_close();?>
 
-		<div id="infoMessage"><?php echo $message;?></div>
 
-		<div class="voltar-login mt-3">
-			<a href="<?php echo base_url("login/index"); ?>"><i class="fas fa-long-arrow-alt-left"></i>Voltar Para Login</a>
+		<div class="voltar-login text-center mt-3">
+			<a id="nv" href="<?php echo base_url("login/index"); ?>"><i class="fas fa-long-arrow-alt-left"></i>Voltar Para Login</a>
 		</div>
 	</div>
 
@@ -77,7 +102,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 
-<script src="<?php echo base_url("public/js/login1.js"); ?>"></script>
+<script src="<?php echo base_url("public/js/login.js"); ?>"></script>
 
 </body>
 </html>
